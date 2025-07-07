@@ -1,0 +1,27 @@
+<section class="modal-background">
+
+    <article class="card modal" id="<%- user.id %>">
+    <div class="card-top">
+        <div class="card-profile-container">
+            <div class="card-profile-image-container">
+                <img src="/images/profile.svg" alt="user profile" class="card-profile-icon"/>
+            </div>
+            <h5 class="card-profile-text"><%= user.user %></h5>
+        </div>
+        <button class="closeModalButton" aria-label="Close modal">
+            <img src="/images/close.svg" alt="close modal" class="closeModalIcon" />
+        </button>
+    </div>
+
+    <div class="card-middle modal">
+        <p class="card-message-text modal"><%= user.text %></p>
+    </div>
+
+    <div class="card-bottom">
+        <p class="card-date"><%= user.added %></p>
+    </div>
+</article>
+
+</section>
+
+<script src="/controllers/closeModal.js"></script>

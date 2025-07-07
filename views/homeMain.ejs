@@ -1,0 +1,7 @@
+<main class="cards-container">
+    <% messages.forEach((messageObj) => { %>
+        <%- include('card', {messageObj}) %>
+    <% }) %>
+</main>
+
+ <script src="/controllers/openInModal.js"></script>

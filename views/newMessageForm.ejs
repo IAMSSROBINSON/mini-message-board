@@ -1,0 +1,22 @@
+<div class="wrapper newMessageRoute-wrapper">
+
+        <form class="form" id="form" method="post" action="/new">
+
+            <h1 class="newMessageRoute-heading">New Message</h1>
+
+            <div class="userInput-container">
+                <label for="userInput">User</label>
+                <input type="text" id="userInput" class="userInput" name="user" maxlength="25">
+            </div>
+
+            <div class="messageText-container">
+                <label for="messageText">Text</label>
+                <textarea class="messageTextInput" name="text" style="width: 100%; resize: none" ></textarea>
+            </div>
+
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+
+</div>
+
+ <script src="/controllers/formController.js"></script>

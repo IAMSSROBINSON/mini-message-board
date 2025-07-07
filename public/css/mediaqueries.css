@@ -1,0 +1,23 @@
+@media screen and (max-width: 320px) {
+    .headingPlusButton-container {
+        flex-wrap: wrap;
+    }
+
+    .home-heading {
+        order: 2;
+    }
+
+    .addNewMessage-button {
+        order: 1;
+        width: 100%;
+        margin-bottom: var(--margin-xl);
+    }
+}
+
+/* HEADER */
+@media screen and (min-width: 768px) {
+    .header {
+        justify-content: start;
+    }
+}
+
