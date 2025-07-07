@@ -13,6 +13,16 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 
+app.use((req, res) => {
+    res.status(404);
+    res.json({success: false, message: "Resource not found."});
+});
+
+app.use((error, req, res, next) => {
+    res.status(500);
+    res.json({success: false, message: "Something went wrong."});
+})
+
 app.listen(PORT, () => {
     console.log(`Server listening on port: ${PORT}..`);
 });
